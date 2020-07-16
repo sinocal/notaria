@@ -16,7 +16,7 @@ $clave = $row['password'];
 
 if (password_verify($pass, $clave)) {
     echo "claves iguales";
-    header("location: ../menu_documents.html");
+    header("location: ../documentos/menu_documents.html");
 }else {
     echo '<h1>El nombre de usuario y/o la contraseña es incorrecta</h1>
           <a href="../index.html">Aceptar</a>';
