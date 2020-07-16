@@ -1,0 +1,117 @@
+@charset "utf-8";
+.iniciar {
+	width: 230px;
+	margin-top: 80px;
+	margin-right: 90px;
+	margin-bottom: auto;
+	margin-left: 400px;
+	padding-top: 30px;
+	padding-right: 40px;
+	padding-bottom: 28px;
+	padding-left: 30px;
+	text-align: center;
+	align-content: center;
+	vertical-align: middle;
+	border-radius: 5px;
+	text-transform:none;
+	font-weight: bolder;
+	letter-spacing: 4px;
+	border: 2px solid #C31414;
+	color: white;
+	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-size: 17px;
+
+	text-decoration-color:#FFF;
+	background-color: #C31414;
+	
+	
+	
+}
+.imagen {
+	opacity: 0.5;
+}
+
+.registro
+{
+	width: 230px;
+	margin-top: 1px;
+	margin-right: 300px;
+	margin-bottom: 4px;
+	margin-left: 700px;
+	padding-top: 30px;
+	padding-right: 40px;
+	padding-bottom: 28px;
+	padding-left: 30px;
+	text-align: center;
+	background-color: #FFFFFF;
+	text-decoration-color:#C31414;
+	letter-spacing: 4px;
+	font-size: 17px;
+	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	border: 2px solid #C31414;
+	border-radius: 5px;
+}
+
+.Iniciar{
+	width: 180px;
+	background-color: #C31414;
+	border-radius: 28px;
+	color: white;
+	border: 2px solid #C31414;
+	text-decoration-color:#FFFFFF;
+	height: 55px;
+	margin-top: 3px;
+	
+}
+.registrar{
+	width: 180px;
+	background-color: #FFFFFF;
+	border-radius: 28px;
+	color: #000000;
+	border: 2px solid #C31414;
+	text-decoration-color:#FFFFFF;
+	height: 55px;
+	margin-top: 3px;
+}
+.cerrar{
+	width: 180px;
+	background-color: #C31414;
+	border-radius: 28px;
+	color: white;
+	border: 2px solid #C31414;
+	text-decoration-color:#FFFFFF;
+	height: 55px;
+	margin-top: 3px;
+}
+.h4{
+	align-content: center;
+	font-size: 24px; 
+	text-align: center;
+	padding-top: 100px;
+}
+.boton1{
+	width: 300px;
+	background-color: #FFFFFF;
+	border-radius: 28px;
+	color: #000000;
+	border: 2px solid #C31414;
+	text-decoration-color:#FFFFFF;
+	height: 70px;
+	margin-top: 70px;
+	margin-left: 400px;
+
+	 
+	
+}
+.boton2{
+	width: 300px;
+	background-color: #FFFFFF;
+	border-radius: 28px;
+	color: #000000;
+	border: 2px solid #C31414;
+	text-decoration-color:#C31414;
+	height: 70px;
+	margin-top: 70px;
+	margin-left: 60px;
+
+7

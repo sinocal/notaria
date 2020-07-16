@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../css/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="../css/sigin.css" rel="stylesheet" type="text/css">
+  <title>Registrarse</title>
+  <script type="text/javascript">
+  var check = function() {
+    if (document.getElementById('password').value == document.getElementById('confirm_password').value) {
+      document.getElementById('message').style.color = 'green';
+      document.getElementById('message').innerHTML = 'matching';
+    } else {
+      document.getElementById('message').style.color = 'red';
+      document.getElementById('message').innerHTML = 'not matching';
+    }
+  }
+  </script>
+  <!-- <script src="compare.js"></script> -->
+</head>
+
+<body>
+  <header class="logo">
+    <ul class="nav nav-tabs"><img src="../img/logo.jpeg" width="190" height="61" alt="" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <li class="nav-item"> <a class="nav-link active link" href="#">Acerca de nosotros&nbsp; </a> </li>
+      <li class="nav-item"> <a class="nav-link" href="#">Documentos&nbsp;</a> </li>
+      <li class="nav-item"> <a class="nav-link" href="#">Preguntas Frecuentes&nbsp;</a> </li>
+      <li class="nav-item"> <a class="nav-link disabled" href="#">Contacto</a> </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input
+      type="button" class="cerrar" value="Cerrar sesión">
+    </ul>
+  </header>
+  <h2 class="h2"><b>Completar información</b></h2>
+  <h4 class="h4"><b>Datos del contacto</b></h4>
+
+  <section>
+    <form action="guardar_datos.php" method="post" class="form">
+      <table class="table">
+        <tr>
+          <td> Nombre(s):
+            <br>
+            <input type="text" name="names"> </td>
+          <td> Rut:
+            <br>
+            <input type="text" name="rut"> </td>
+
+        </tr>
+        <tr>
+          <td> Apellido Paterno:
+            <br>
+            <input type="text" name="paternal_last_name"> </td>
+          <td> Apellido Materno:
+            <br>
+            <input type="text" name="maternal_last_name"> </td>
+        </tr>
+        <tr>
+          <td> Telefono:
+            <br>
+            <input type="text" name="telefono"> </td>
+          <td> Dirección:
+            <br>
+            <input type="text" name="address"> </td>
+        </tr>
+        <tr>
+          <td>Ciudad: <br> <input type="text" name="ciudad"> </td>
+          <td>Comuna: <br> <input type="text" name="comuna"> </td>
+        </tr>
+        <tr>
+          <td>Sexo: </td>
+          <td>
+            <input type="radio" name="sexo" value="1"> Masculino
+            <input type="radio" name="sexo" value="0"> Femenino </td>
+        </tr>
+        <!-- confirmar si los email y las contraseñas son iguales -->
+        <tr>
+          <td>Email:
+            <br>
+            <input id="email" type="text" name="email"> </td>
+          <td>Confirmar email
+            <br>
+            <input id="email_2" type="text" name="email_2"> </td>
+        </tr>
+        <tr>
+          <td>Contraseña:
+            <br>
+            <input id="password" type="password" name="pass" onkeyup="check();"> </td>
+          <td>Confirmar Contraseña
+            <br>
+            <input id="confirm_password" type="password" name="pass_2" onkeyup="check();"> <br>
+            <span id="message">  </span>
+          </td>
+
+        </tr>
+
+      </table>
+      <input class="boton" type="submit" name="" value="Guardar datos" id="">
+    </form>
+
+    <!-- <div class="row">
+	    <div class="col-lg-6"> <form class="form">
+	    Nombre(s) </form>
+	      <input type="text" class="bot1">
+	  <form class="form">Apellido Paterno </form><input type="text" class="bot1">
+	  <form class="form">Apellido Materno </form><input type="text" class="bot1">
+	  <form class="form">Rut </form><input type="number" class="bot1">
+	  <form class="form">Teléfono </form><input type="tel" class="bot1">
+	  <form class="form">Dirección</form><input type="text" class="bot1">
+      <form class="form" id="form1" name="form1" method="post">Comuna</form><input type="text" class="bot1">
+	    </div>
+	    <div class="col-lg-6">
+	     <form class="form1">Sexo</form>
+			  <p class="form1">
+			    <label>
+			      </label>
+			    <br>
+			    <label>
+			      <input type="radio" name="Sexo" value="Femenino" id="Sexo_1">
+			      Femenino</label><br></p>
+				  <form class="form1">Email</form> <input type="email" class="bot2">
+				<form class="form1">Confirmar email</form><input type="email" class="bot2">
+				<form class="form1">Contraseña</form><input type="password" class="bot2">
+				<form class="form1">Confirmar Contraseña </form><input type="password" class="bot2">
+	    </div>
+      </div> -->
+
+  </section>
+
+  <!-- <input type="button" class="boton" value="Continuar" align="bottom" onclick="location.href='verificacion.html'"> -->
+
+
+</body>
+
+</html>
